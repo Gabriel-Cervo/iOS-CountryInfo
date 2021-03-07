@@ -13,6 +13,7 @@
 		844268B625F58DED00C6625D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844268B425F58DED00C6625D /* Main.storyboard */; };
 		844268B825F58DF000C6625D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 844268B725F58DF000C6625D /* Assets.xcassets */; };
 		844268BB25F58DF000C6625D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844268B925F58DF000C6625D /* LaunchScreen.storyboard */; };
+		844268C525F590D100C6625D /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = 844268C425F590D100C6625D /* countries.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		844268B725F58DF000C6625D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		844268BA25F58DF000C6625D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		844268BC25F58DF000C6625D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		844268C425F590D100C6625D /* countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		844268AD25F58DED00C6625D /* CountryInfo */ = {
 			isa = PBXGroup;
 			children = (
+				844268C325F590C800C6625D /* Content */,
 				844268AE25F58DED00C6625D /* AppDelegate.swift */,
 				844268B025F58DED00C6625D /* SceneDelegate.swift */,
 				844268B225F58DED00C6625D /* ViewController.swift */,
@@ -65,6 +68,14 @@
 				844268BC25F58DF000C6625D /* Info.plist */,
 			);
 			path = CountryInfo;
+			sourceTree = "<group>";
+		};
+		844268C325F590C800C6625D /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				844268C425F590D100C6625D /* countries.json */,
+			);
+			path = Content;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +137,7 @@
 			files = (
 				844268BB25F58DF000C6625D /* LaunchScreen.storyboard in Resources */,
 				844268B825F58DF000C6625D /* Assets.xcassets in Resources */,
+				844268C525F590D100C6625D /* countries.json in Resources */,
 				844268B625F58DED00C6625D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

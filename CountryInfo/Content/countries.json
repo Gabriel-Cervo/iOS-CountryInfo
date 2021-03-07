@@ -1,0 +1,17 @@
+[
+    {
+        name: 'Estonia',
+        capital: 'Tallinn',
+        population: '1,329,46 million'
+    },
+    {
+        name: 'Italy',
+        capital: 'Roma',
+        population: '60,8 million'
+    },
+    {
+        name: 'France',
+        capital: 'Paris',
+        population: '63,384 million'
+    }
+]
