@@ -14,6 +14,7 @@
 		844268B825F58DF000C6625D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 844268B725F58DF000C6625D /* Assets.xcassets */; };
 		844268BB25F58DF000C6625D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844268B925F58DF000C6625D /* LaunchScreen.storyboard */; };
 		844268C525F590D100C6625D /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = 844268C425F590D100C6625D /* countries.json */; };
+		844268C825F593B300C6625D /* CountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844268C725F593B300C6625D /* CountryTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		844268BA25F58DF000C6625D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		844268BC25F58DF000C6625D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		844268C425F590D100C6625D /* countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
+		844268C725F593B300C6625D /* CountryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				844268B025F58DED00C6625D /* SceneDelegate.swift */,
 				844268B225F58DED00C6625D /* ViewController.swift */,
 				844268B425F58DED00C6625D /* Main.storyboard */,
+				844268C725F593B300C6625D /* CountryTableViewCell.swift */,
 				844268B725F58DF000C6625D /* Assets.xcassets */,
 				844268B925F58DF000C6625D /* LaunchScreen.storyboard */,
 				844268BC25F58DF000C6625D /* Info.plist */,
@@ -149,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				844268C825F593B300C6625D /* CountryTableViewCell.swift in Sources */,
 				844268B325F58DED00C6625D /* ViewController.swift in Sources */,
 				844268AF25F58DED00C6625D /* AppDelegate.swift in Sources */,
 				844268B125F58DED00C6625D /* SceneDelegate.swift in Sources */,
