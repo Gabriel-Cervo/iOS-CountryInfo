@@ -16,16 +16,25 @@ class DetailViewController: UIViewController {
         view = UIView()
         view.backgroundColor = .white
         
-        let imageView = UIImageView(image: UIImage(named: countryName!.lowercased()))
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.frame = CGRect(x: 0, y: 0, width: 450, height: 225)
-        view.addSubview(imageView)
+        let countryImageView = UIImageView(image: UIImage(named: countryName!.lowercased()))
+        countryImageView.translatesAutoresizingMaskIntoConstraints = false
+        countryImageView.frame = CGRect(x: 0, y: 0, width: 450, height: 225)
+        view.addSubview(countryImageView)
+        
+        let countryNameLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 20, height: 8))
+        countryNameLabel.translatesAutoresizingMaskIntoConstraints = false
+        countryNameLabel.text = countryName!
+        countryNameLabel.font = .systemFont(ofSize: 24, weight: .bold)
+        view.addSubview(countryNameLabel)
         
         NSLayoutConstraint.activate([
-            imageView.centerXAnchor.constraint(equalTo: view.layoutMarginsGuide.centerXAnchor),
-            imageView.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor, constant: 70),
-            imageView.widthAnchor.constraint(lessThanOrEqualToConstant: 450),
-            imageView.heightAnchor.constraint(lessThanOrEqualToConstant: 225)
+            countryImageView.centerXAnchor.constraint(equalTo: view.layoutMarginsGuide.centerXAnchor),
+            countryImageView.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor, constant: 70),
+            countryImageView.widthAnchor.constraint(lessThanOrEqualToConstant: 450),
+            countryImageView.heightAnchor.constraint(lessThanOrEqualToConstant: 225),
+            
+            countryNameLabel.centerXAnchor.constraint(equalTo: view.layoutMarginsGuide.centerXAnchor),
+            countryNameLabel.topAnchor.constraint(equalTo: countryImageView.bottomAnchor, constant: 15)
         ])
     }
     
