@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		843F8A7925FACFA5009EC810 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843F8A7825FACFA5009EC810 /* DetailViewController.swift */; };
 		844268AF25F58DED00C6625D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844268AE25F58DED00C6625D /* AppDelegate.swift */; };
 		844268B125F58DED00C6625D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844268B025F58DED00C6625D /* SceneDelegate.swift */; };
 		844268B325F58DED00C6625D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844268B225F58DED00C6625D /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		843F8A7825FACFA5009EC810 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		844268AB25F58DED00C6625D /* CountryInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountryInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		844268AE25F58DED00C6625D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		844268B025F58DED00C6625D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				844268B225F58DED00C6625D /* ViewController.swift */,
+				843F8A7825FACFA5009EC810 /* DetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 				844268C825F593B300C6625D /* CountryTableViewCell.swift in Sources */,
 				844268B325F58DED00C6625D /* ViewController.swift in Sources */,
 				844268AF25F58DED00C6625D /* AppDelegate.swift in Sources */,
+				843F8A7925FACFA5009EC810 /* DetailViewController.swift in Sources */,
 				844268CE25F5948400C6625D /* Country.swift in Sources */,
 				844268B125F58DED00C6625D /* SceneDelegate.swift in Sources */,
 			);

@@ -37,6 +37,15 @@ class ViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let detailVC = storyboard?.instantiateViewController(identifier: "DetailViewController") else {
+            print("Can't instantiate view controller")
+            return
+        }
+        
+        navigationController?.pushViewController(detailVC, animated: true)
+    }
+    
     
     //MARK: Load JSON
     
