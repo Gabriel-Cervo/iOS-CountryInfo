@@ -61,10 +61,10 @@
             </objects>
             <point key="canvasLocation" x="863.768115942029" y="106.47321428571428"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="KCZ-bk-BnJ">
             <objects>
-                <viewController storyboardIdentifier="DetailViewController" id="b8F-Gp-jyN" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailViewController" id="b8F-Gp-jyN" customClass="DetailViewController" customModule="CountryInfo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jO8-YE-TAl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

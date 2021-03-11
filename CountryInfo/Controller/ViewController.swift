@@ -38,11 +38,16 @@ class ViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let detailVC = storyboard?.instantiateViewController(identifier: "DetailViewController") else {
+        guard let detailVC = storyboard?.instantiateViewController(identifier: "DetailViewController") as? DetailViewController else {
             print("Can't instantiate view controller")
             return
         }
         
+        let country = countries[indexPath.row]
+        detailVC.countryName = country.name
+        detailVC.capital = country.capital
+        detailVC.population = country.population
+
         navigationController?.pushViewController(detailVC, animated: true)
     }
     
