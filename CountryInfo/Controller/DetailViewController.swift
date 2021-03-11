@@ -19,6 +19,8 @@ class DetailViewController: UIViewController {
         let countryImageView = UIImageView(image: UIImage(named: countryName!.lowercased()))
         countryImageView.translatesAutoresizingMaskIntoConstraints = false
         countryImageView.frame = CGRect(x: 0, y: 0, width: 450, height: 225)
+        countryImageView.layer.borderWidth = 1
+        countryImageView.layer.borderColor = UIColor(white: 0.2, alpha: 0.6).cgColor
         view.addSubview(countryImageView)
         
         let countryNameLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 20, height: 8))
