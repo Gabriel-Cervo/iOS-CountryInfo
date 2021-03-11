@@ -16,6 +16,30 @@ class ViewController: UITableViewController {
         loadCountriesFromJson()
     }
     
+    //MARK: TableView Methods
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return countries.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "Country") as? CountryTableViewCell else {
+            fatalError("Can't dequeue reusable cell")
+        }
+        
+        let country = countries[indexPath.row]
+        cell.countryImage.image = UIImage(named: country.name.lowercased())
+        cell.countryLabel.text = country.name
+        return cell
+    }
+    
+    
+    //MARK: Load JSON
+    
     func loadCountriesFromJson() {
         let decoder = JSONDecoder()
         
