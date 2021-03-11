@@ -27,6 +27,18 @@ class DetailViewController: UIViewController {
         countryNameLabel.font = .systemFont(ofSize: 24, weight: .bold)
         view.addSubview(countryNameLabel)
         
+        let capitalLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 20, height: 8))
+        capitalLabel.translatesAutoresizingMaskIntoConstraints = false
+        capitalLabel.text = "Capital: \(capital!)"
+        capitalLabel.font = .systemFont(ofSize: 16)
+        view.addSubview(capitalLabel)
+        
+        let populationLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 20, height: 8))
+        populationLabel.translatesAutoresizingMaskIntoConstraints = false
+        populationLabel.text = "Population: \(population!)"
+        populationLabel.font = .systemFont(ofSize: 16)
+        view.addSubview(populationLabel)
+        
         NSLayoutConstraint.activate([
             countryImageView.centerXAnchor.constraint(equalTo: view.layoutMarginsGuide.centerXAnchor),
             countryImageView.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor, constant: 70),
@@ -34,7 +46,13 @@ class DetailViewController: UIViewController {
             countryImageView.heightAnchor.constraint(lessThanOrEqualToConstant: 225),
             
             countryNameLabel.centerXAnchor.constraint(equalTo: view.layoutMarginsGuide.centerXAnchor),
-            countryNameLabel.topAnchor.constraint(equalTo: countryImageView.bottomAnchor, constant: 15)
+            countryNameLabel.topAnchor.constraint(equalTo: countryImageView.bottomAnchor, constant: 15),
+            
+            capitalLabel.centerXAnchor.constraint(equalTo: view.layoutMarginsGuide.centerXAnchor),
+            capitalLabel.topAnchor.constraint(equalTo: countryNameLabel.bottomAnchor, constant: 10),
+            
+            populationLabel.centerXAnchor.constraint(equalTo: view.layoutMarginsGuide.centerXAnchor),
+            populationLabel.topAnchor.constraint(equalTo: capitalLabel.bottomAnchor),
         ])
     }
     
